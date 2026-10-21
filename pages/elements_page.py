@@ -33,5 +33,7 @@ class CheckBoxPage(BasePage):
 
     def click_on_check_box_home(self):
         self.element_is_visible(self.locators.CHECK_BOX_HOME).click()
+        self.element_is_visible(self.locators.SWITCHER_HOME).click()
+        self.element_is_visible(self.locators.SWITCHER_DESKTOP).click()
         return self.element_is_visible(self.locators.CHECK_BOX_HOME_RESULT).text.split(':')[1].strip().split('\n')
-         
+        

@@ -20,5 +20,10 @@ class TestCheckBox:
         check_box_page= CheckBoxPage(driver, 'https://demoqa.com/checkbox')
         check_box_page.open()
         result= check_box_page.click_on_check_box_home()
+        assert check_box_page.element_is_visible(check_box_page.locators.CHECK_BOX_DESKTOP)
+        assert check_box_page.element_is_visible(check_box_page.locators.CHECK_BOX_DOCUMENTS)
+        assert check_box_page.element_is_visible(check_box_page.locators.CHECK_BOX_DOWNLOADS)
+        assert check_box_page.element_is_visible(check_box_page.locators.NOTES)
+        assert check_box_page.element_is_visible(check_box_page.locators.COMMANDS)
         time.sleep(5)
         assert 'home' in result

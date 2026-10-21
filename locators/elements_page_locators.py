@@ -17,9 +17,16 @@ class TextBoxPageLocators:
 
 class CheckBoxPageLocators:
     CHECK_BOX_HOME = (By.CSS_SELECTOR, "span.rc-tree-checkbox")
-    #COLLAPSE_ALL_BUTTON = (By.CSS_SELECTOR, "button[title='Collapse all']")
-    #CHECKBOXES = (By.CSS_SELECTOR, "span[class='rct-checkbox']")
-    #CHECKED_CHECKBOXES = (By.CSS_SELECTOR, "svg[class='rct-icon rct-icon-check']")
-    #TITLE_ITEM = (By.CSS_SELECTOR, "span[class='rct-title']")
+    SWITCHER_HOME=(By.CSS_SELECTOR, '.rc-tree-switcher_close')
+
+    CHECK_BOX_DESKTOP=(By.CSS_SELECTOR, '[title="Desktop"]')
+    SWITCHER_DESKTOP=(By.CSS_SELECTOR, '.rc-tree-switcher.rc-tree-switcher_close')
+
+    CHECK_BOX_DOCUMENTS=(By.CSS_SELECTOR, '[title="Documents"]')
+    CHECK_BOX_DOWNLOADS=(By.CSS_SELECTOR, '[title="Downloads"]')
+    NOTES=(By.CSS_SELECTOR, '[title=Notes]')
+    COMMANDS=(By.CSS_SELECTOR, '[title=Commands]')
+
 
     CHECK_BOX_HOME_RESULT = (By.CSS_SELECTOR, '#result')
+    
